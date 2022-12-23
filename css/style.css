@@ -1,0 +1,353 @@
+/* All common css Start */
+:root{
+  --white:#fff;
+  --heading:#1E1E1E;  
+  --paragraph:#616161;
+  --primary:#007F5F;
+  --Poppins:'Poppins', sans-serif;
+  --NunitoSans:'Nunito Sans', sans-serif;
+  --review:#FF8B00;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+a:hover{
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+.common_heading{
+    max-width: 600px;
+}
+ul, li, ol{
+    list-style: none;
+}
+.common_heading h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color:var(--heading);
+}
+.common_heading p{
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: var(--paragraph);
+
+}
+.common_btn {
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px 30px;
+    transition: all linear .3s;
+    color: #fff;
+}
+.common_btn:hover {
+    color: var(--primary);
+    background: #fff;
+
+}
+/* All common css end */
+
+#navbar{
+    background: var(--white);
+}
+.nav_btn a{
+    color: var(--white);
+    background:var(--primary) ;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px; 
+}
+/* Banner part Start */
+#banner{
+    background: url(../images/banner.jpg) no-repeat center/cover ;
+}
+
+#banner .overlay{ 
+    padding: 134px 0; 
+    background: rgba(0, 0, 0, 0.4);
+}
+.banner_info{
+    padding-right: 212px;
+}
+.banner_info  h1{
+    font-family: var(--Poppins);
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: var(--white);
+
+}
+.banner_info  p{
+    font-family: var(--Poppins);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--white);
+    opacity: 0.7;
+}
+.banner_info a{
+    background: #007F5F;
+    border-radius: 17px;
+    padding: 16px 35px;
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+.banner_info .search_box{
+   width:825px;
+   padding: 24px 26px;
+   margin-top: 50px;
+   background:var(--white);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 45px;
+}
+.banner_info .search_box .item{
+    display: flex;
+}
+.banner_info .search_box .item .text{
+
+}
+.banner_info .search_box .item .text select{
+       width: 100%;
+       border: none;
+}
+.banner_info .search_box .item .text input::placeholder{
+    font-family: var(--Nunito);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2d0b0b;
+    margin-top: 8px;
+
+}
+.banner_info .search_box .item .text input{
+        width: 100%;
+        border: none;
+}
+.banner_info .search_box .search button{
+    border: none;
+    font-family: var(--Nunito);
+    background:var(--primary);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--white);
+    stroke: var(--white);
+    cursor: pointer;
+}
+.banner_info .search_box .item svg{
+    stroke: var(--primary);
+}
+/* .banner_images{
+    margin-bottom: 24px;
+}
+.search_box:hover svg{
+    stroke: red;
+}
+.search_box:hover svg{
+    stroke: green;
+} */
+/* Banner part end */
+
+
+
+/* travel_benefit part start */
+#travel_benefit{
+    padding-top: 130px;
+}
+#travel_benefit .common_heading{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 112px;
+  
+}
+.travel_benefit_item{
+    background: var(--white);
+    border-radius: 14px;
+    padding: 63px 77px 63px 44px;
+    transition: all linear 0.3s;
+    margin-bottom: 24px;
+} 
+.travel_benefit_item:hover{
+     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);   
+     cursor: pointer;
+}
+.travel_benefit_item .icone{
+    width: 84.18px;
+    height: 75px;
+    background: rgba(0, 127, 95, 0.1);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.travel_benefit_item .text{
+    padding-top: 42px;
+
+}
+.travel_benefit_item .text h3{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;;
+    color: var(--heading);
+    letter-spacing: 0.2px;
+}
+.travel_benefit_item .text p {
+    color: var(--paragraph);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 82px;
+}
+/* travel_benefit part end*/
+
+/* popular part start */
+#popular{
+    padding-top: 130px;
+    padding-bottom: 150px;
+}
+#popular .common_heading{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popular_slider .slide_item{
+    width: 370px;
+    height: 592px;
+ }
+ .popular_item{
+ 
+    padding:21px;
+    margin: 20px 12px ;
+    transition: all linear .3s;
+ }
+ .popular_item:hover{
+    box-shadow:0px 20px 50px  ;
+ }
+ .popular_item .image{
+     border-radius:14px ;
+     overflow: hidden;
+    }
+    .popular_item .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .popular_item .text{}
+    .popular_item .text span.review{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top:  37px;
+        padding-bottom: 17px; 
+    }
+    .popular_item .text .review svg:first-child{
+        fill: #FF8B00;
+    }
+    .popular_item .text h3{
+        font-family: var(--Poppins);
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #1E1E1E;
+    } 
+    .popular_item .text p{
+        font-family: var(--Poppins);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #616161;
+    } 
+    .popular_item .text span{
+        font-family: var(--Poppins);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;    
+        color: #1E1E1E;
+    } 
+    
+    .popular_item .text .review svg{
+        fill: #E0E0E0; 
+    } 
+    .review_count{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FF8B00;
+    }
+    .slick-slide .slick-current .slick-sctive .slick-center  .slick-center  .popular_item{
+       box-shadow:0px 20px 50px  ;
+    }
+    /* popular part end */
+
+
+
+
+
+    /* go travel part start */
+    #go_travel{
+        padding: 130px 0 150px;
+        background: rgba(30, 30, 30, 0.05);
+
+    }
+    .go_travel_text ul{
+        margin-left: -30px;
+    }
+    #go_travels .go_travel_text{
+        text-align: left;
+    }
+    .go_travel_text{
+        max-width: 516px;
+    }
+    .go_travel_text ul li {
+        display: flex;
+        gap: 10px;
+        padding-right: 124px;
+        margin-bottom: 10px;
+    }
+    .go_travel_text ul li span{
+        margin-top: -8px;
+        color: var(--paragraph);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #go_travels .common_btn{
+        background: var(--primary);
+        color: #fff;
+        padding: 10px 50px;
+        transition: all linear .3s;
+    }
+
+    #go_travels .common_btn:hover{
+        background: #fff;
+        color: var(--primary);
+    }
+    /* go travel part end */
